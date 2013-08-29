@@ -1,0 +1,3 @@
+#ifndef Unity_iPhone_BetableUnity_h
+#define Unity_iPhone_BetableUnity_h
+#endif
