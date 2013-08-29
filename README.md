@@ -12,3 +12,14 @@ Instruction:
 2.import the unity package
 3.import the plugins into your xCode project
 4.edit the plugin and add your clientId clientSecret and gameId
+5. add the following to the appDelegate (UnityAppController.mm)
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    //send message here
+    NSLog(@"handleOpenURL %@", url);
+    
+    NSString *urlString = [url absoluteString];
+    const char *urlChar = [urlString cStringUsingEncoding:NSASCIIStringEncoding];
+    UnitySendMessage("BetableMngr", "OnAccessCode", urlChar);
+    return YES;
+}
