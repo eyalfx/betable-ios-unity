@@ -5,3 +5,10 @@ Unity3D plugin to communicate with Betable IOS sdk
 *****  work in progress  ******
 currently you can only authorize a user via the Betable IOS sdk webview which is integrated.
 Also, you can send a bet and recieve respond
+
+
+Instruction:
+1.install betable-ios-sdk available on betable github page
+2.import the unity package
+3.import the plugins into your xCode project
+4.edit the plugin and add your clientId clientSecret and gameId
